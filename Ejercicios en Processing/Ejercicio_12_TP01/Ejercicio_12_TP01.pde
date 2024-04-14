@@ -3,7 +3,7 @@ String nombre = " ";
 String saludo = " ";
 
 public void setup(){
-  size(500,250);
+  size(800,250);
   println(texto);
 }
 
@@ -17,4 +17,9 @@ public void draw(){
 public void keyPressed(){
   nombre += key;
   println(nombre);
+
+if (key == '\n'){
+  saludo = "Bienvenido "+ nombre;
+  println(saludo);
+}
 }
